@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Teko:wght@500;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&display=swap');
 
 *,
 *::after,
@@ -18,9 +17,9 @@
   --clr-wrong: #dc3545;
   --clr-bg: #f7f7f7;
   --clr-border: #dedede;
-  --ff-title: font-family: 'Lato', sans-serif;
-  --ff-one: font-family: 'Teko', sans-serif;
-  --ff-two: font-family: 'Titillium Web', sans-serif;
+  --ff-one: 'Teko', sans-serif;
+  --ff-two: 'Oswald', sans-serif;
+  ;
 }
 
 /* pseudo elements in css */
@@ -33,14 +32,18 @@ html {
 body {
   font-family: var(--ff-one);
   background-color: var(--clr-bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
 }
 
 /* global css */
 img {
   width: 100%;
   height: auto;
-  -o-object-fit: contain;
-  object-fit: contain;
 }
 
 a {
@@ -61,16 +64,152 @@ li {
 .btn {
   display: inline-block;
   border-radius: 8px;
-  padding: 0.5rem 1.5rem;
+  padding: 0.8em 1.5rem;
   margin-top: 0.5rem;
   text-transform: capitalize;
-  font-size: 1.2rem;
-  font-weight: 500;
+  font-size: 1.25rem;
+  font-weight: 600;
   cursor: pointer;
   /* customize */
-  background-color: #1c2042;
-  color: white;
-  border: 2px solid #1c2042;
+  background-color: var(--clr-dark);
+  color: var(--clr-white);
+  border: 2px solid var(--clr-dark);
+}
+
+.container {
+  margin: 20px auto;
+  width: 350px;
+  text-align: left;
+}
+
+.container h2 {
+  font-size: 2rem;
+}
+
+h1 {
+  letter-spacing: 1px;
+  font-family: var(--ff-two)
+}
+
+h3 {
+  border-bottom: 1px solid var(--clr-border);
+  padding-bottom: 5px;
+  margin: 15px 0 10px;
+  align-content: left;
+}
+
+h4 {
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.inc-exp-container {
+  background-color: var(--clr-white);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.inc-exp-container>div {
+  flex: 1;
+  text-align: center;
+  margin: 0 20px;
+}
+
+.inc-exp-container>div:first-of-type {
+  border-right: 1px solid var(--clr-border);
+  padding-right: 40px;
+}
+
+.money {
+  font-size: 20px;
+  margin: 5px 0;
+}
+
+.money-plus {
+  color: var(--clr-success);
+}
+
+.money-minus {
+  color: var(--clr-wrong);
+}
+
+label {
+  display: inline-block;
+  margin: 10px 0;
+}
+
+input {
+  border: 1px solid var(--clr-border);
+  border-radius: 2px;
+  display: block;
+  padding: 10px;
+  width: 100%;
+}
+
+.btn {
+  cursor: pointer;
+  background-color: var(--clr-dark);
+  color: var(--clr-white);
+  border: 0;
+  display: block;
+  width: 100%;
+  margin: 10px 0 30px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.btn:focus,
+.delete-button:focus {
+  outline: 0;
+}
+
+.list {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.list li {
+  background-color: var(--clr-white);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  color: var(--clr-dark);
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 10px;
+  margin: 10px 0;
+  width: 320px;
+}
+
+.list li.plus {
+  border-right: 5px solid var(--clr-success);
+}
+
+.list li.minus {
+  border-right: 5px solid var(--clr-wrong);
+}
+
+.delete-btn {
+  cursor: pointer;
+  background-color: var(--clr-wrong);
+  border: 0;
+  color: var(--clr-white);
+  font-size: 1.5rem;
+  padding: 2px 5px;
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(-100%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.list li:hover .delete-btn {
+  opacity: 1;
 }
 
 @media screen and (min-width: 576px) {}
