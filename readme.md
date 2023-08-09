@@ -22,7 +22,7 @@
 
 ## Description
 
-The Expense Tracker is a web application built using Vanilla JavaScript that helps you keep track of your income and expenses. You can add transactions, categorize them as income or expenses, and see your balance update in real-time.
+The Expense Tracker is a web application built using Vanilla JavaScript that helps you keep track of your income and expenses. You can add transactions, categorize them as income or expenses, view your balance, monitor your income and expenses, and keep a history of your financial activities. The application allows you to track your financial transactions, categorize them, and see your balance update in real-time.
 
 ## Screenshot
 
@@ -34,35 +34,35 @@ You can access the live demo of the Expense Tracker at [Live Demo URL](https://n
 
 ## Features
 
-- Add Transaction: Allows you to add new income or expense transactions.
-- Real-time Balance: Shows your current balance that updates with every transaction.
-- Categorized Display: Transactions are categorized as income (green) or expenses (red) for easy identification.
-- Delete Transactions: You can delete specific transactions from the history.
+- **Add Transaction:** You can add new income or expense transactions by providing a transaction name and amount.
+- **Real-time Balance:** The balance is calculated and updated in real-time as you add or remove transactions.
+- **Categorized Display:** Transactions are color-coded as green for income and red for expenses, making it easy to differentiate.
+- **Delete Transactions:** You can delete specific transactions from the transaction history.
 
 ## Technologies Used
 
-- HTML
-- CSS
-- JavaScript
-- **DOM Manipulation**: Utilized DOM manipulation techniques to dynamically update the user interface.
-- **LocalStorage**: Used to store transaction data locally in the browser.
-- **FontAwesome**: Utilized FontAwesome icons for improved visual representation.
+- **HTML:** The structure of the web page is built using HTML.
+- **CSS:** Custom styling is applied using CSS.
+- **JavaScript:** Interactive features and functionalities are implemented using Vanilla JavaScript.
+- **DOM Manipulation:** The application dynamically updates the user interface using DOM manipulation techniques.
+- **LocalStorage:** Transaction data is stored locally in the browser using LocalStorage for persistence.
+- **FontAwesome:** FontAwesome icons are used to enhance the visual representation of UI elements.
 
 ## How It Works
 
 - When the page loads, the Expense Tracker initializes with an initial balance of ₹0.00.
-- You can add transactions using the "Add New Transaction" form. Enter the transaction name and amount, specifying whether it's income or an expense.
-- The balance, income, and expense sections dynamically update based on the transactions you add.
-- You can see a history of transactions in the "History" section, with each transaction displayed along with its category and amount.
-- The "Delete" button allows you to remove specific transactions from the history.
+- You can add transactions using the "Add New Transaction" form. Enter the transaction name and amount, and specify whether it's income or an expense.
+- The balance, income, and expense sections are dynamically updated based on the transactions you add.
+- The "History" section displays a list of transactions with their category and amount.
+- You can use the "Delete" button next to each transaction to remove it from the history.
 
 ## Usage
 
 1. Open the live demo of the Expense Tracker using the provided link.
 2. Use the "Add New Transaction" form to add your income and expense transactions.
-3. The "Your Balance" section will reflect the updated balance after each transaction.
-4. The "Income" and "Expenses" sections will show the total income and total expenses, respectively.
-5. The "History" section will display a list of your transactions along with the transaction category and amount.
+3. The "Your Balance" section reflects the updated balance after each transaction.
+4. The "Income" and "Expenses" sections show the total income and total expenses, respectively.
+5. The "History" section displays a list of your transactions, categorized and with corresponding amounts.
 6. Use the "Delete" button next to each transaction to remove it from the history.
 
 ## Project Structure
@@ -81,7 +81,7 @@ You can access the live demo of the Expense Tracker at [Live Demo URL](https://n
 
 ## Note
 
-Make sure to keep track of your expenses responsibly and avoid storing sensitive information in the browser's local storage.
+Please use this Expense Tracker responsibly and avoid storing sensitive information in the browser's local storage.
 
 Feel free to use and customize this Expense Tracker for your financial management needs!
 
