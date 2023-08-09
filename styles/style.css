@@ -203,12 +203,31 @@ input {
   position: absolute;
   top: 50%;
   left: 0%;
-  transform: translate(-100%, -50%);
+  transform: translate(-109%, -50%);
   opacity: 0;
   transition: opacity 0.3s ease;
 }
 
 .list li:hover .delete-btn {
+  opacity: 1;
+}
+
+.edit-btn {
+  cursor: pointer;
+  background-color: var(--clr-wrong);
+  border: 0;
+  color: var(--clr-white);
+  font-size: 1.5rem;
+  padding: 2px 5px;
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translate(129%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.list li:hover .edit-btn {
   opacity: 1;
 }
 
