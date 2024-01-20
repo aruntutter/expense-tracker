@@ -30,7 +30,7 @@ The Expense Tracker is a web application built using Vanilla JavaScript that hel
 
 ## Demo
 
-You can access the live demo of the Expense Tracker at [Live Demo URL](https://nimble-taffy-71512b.netlify.app/).
+You can access the live demo of the Expense Tracker [Here](https://nimble-taffy-71512b.netlify.app/).
 
 ## Features
 
